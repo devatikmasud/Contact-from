@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: #0b0f19; 
+    background-image:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.30), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(253, 109, 20, 0.4), transparent 40%);
+    width: 450px;
+    height: 630px;
+    border-radius: 16px 16px 40px 16px; 
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); 
+    padding: 40px; 
+    position: relative;
+    overflow: hidden;
+   
+}
+
+/* form styling */
+.single-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.single-form label {
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 500px;
+}
+
+.single-form input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.single-form input[type="text"]:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.single-form input[type="text"]::placeholder {
+    color: #64748b;
+}
+.single-form input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.single-form input[type="submit"] {
+   background-color: blue;
+   transition: all 0.4s ease;
+   cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+
